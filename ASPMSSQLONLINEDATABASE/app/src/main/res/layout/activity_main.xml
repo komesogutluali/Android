@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_kisi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input"
+        >
+    </ListView>
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/ad" />
+
+        <EditText
+            android:id="@+id/etsoyad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/soyad" />
+
+        <EditText
+            android:id="@+id/etyas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/yas" />
+
+        <Button
+            android:id="@+id/btn_ekle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btn_ekle"/>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

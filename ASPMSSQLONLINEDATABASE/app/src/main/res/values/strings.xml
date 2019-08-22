@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ASPMSSQLONLINEDATABASE</string>
+    <string name="ad">Ad</string>
+    <string name="soyad">Soyad</string>
+    <string name="yas">Yaş</string>
+    <string name="btn_ekle">Ekle</string>
+</resources>
