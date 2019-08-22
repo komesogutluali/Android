@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Şifre Saklama</string>
+    <string name="btn_giris">Giriş</string>
+    <string name="et_kullanici">Kullanıcı Adı</string>
+    <string name="et_sifre">Şifre</string>
+    <string name="btn_kopyala">✓</string>
+    <string name="textview_kul">Kullanıcı Adı:</string>
+    <string name="textview_sifre">Şifre:</string>
+    <string name="textview_aciklama">Açıklama:</string>
+    <string name="btn_sifreunuttum">Şifre mi Unuttum</string>
+    <string name="btn_kayit">Kaydet</string>
+    <string name="btn_ekle">Kayıt Ekle</string>
+    <string name="ben_hatirla">Beni Hatırla</string>
+    <string name="btn_dogrula">Doğrula</string>
+    <string name="textview_dogrula">Lütfen Uygulama içerisindeki Şifrelerden Bir tanesini giriniz.</string>
+</resources>

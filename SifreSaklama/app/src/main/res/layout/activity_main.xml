@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:id="@+id/bos"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_blue_bright">
+        </LinearLayout>
+<LinearLayout
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        >
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/k_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="@string/et_kullanici"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        app:passwordToggleEnabled="true"
+        >
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/k_sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="@string/et_sifre"
+        android:inputType="textPassword"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <CheckBox
+        android:id="@+id/beni_hatirla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/ben_hatirla"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/btn_giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btn_giris"
+        android:textColor="#fffdd0" />
+
+    <Button
+        android:id="@+id/btn_sifre_unuttum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btn_sifreunuttum"
+        android:textColor="#fffdd0" />
+</LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
