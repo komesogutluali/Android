@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".LimonHakkinda">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.4">
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/limon_hakkimizda_banner"/>
+    </LinearLayout>
+
+
+    <!--Content Kısmı Başlangıç-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="8">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Dış Çerçeve Başlangıç-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--Hakkımızda Başlangıç-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:background="#01194a">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/beyaz"
+                    android:text="Limon Creatif 2016 yılında ilk etapta üniversite sürecinde yaptıkları projeleri paylaşabilmek amacı ile Ali Kömesöğütlü ve Hasan Ekşi tarafından kuruldu.İlerleyen süreçte sadece okul projeleri ile kısıtlı kalmayan ekip web tasarım, sosyal medya danışmanlığı, kurumsal ve eğitim çözümleri başta olmak üzere birçok alanda firmalara hizmet verdi.Tüm bunların yanında ayrıca mobil çözümler üzerine kısa süre önce çalışmalara başlayan ekip bitirme projesi kapsamında İste Burada uygulamasını hazırladı."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/beyaz"
+                        android:text="Teşekkürler !"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/beyaz"
+                        android:text="Bitirme Projesi amacı ile hazırladığımız İste Burada uygulamasının her aşamasında desteklerini eksik etmeyen danışman hocalarımız Ahmet Gökçen ve Sertan Alkan hocalarımıza, her sorumuza cevap veren ve yardımcı olan Hüseyin Atasoy hocamıza, beta sürecinde bizleri geri dönüşleri ile bilgilendiren tüm arkadaşlarımıza ve uygulamayı indirdiğiniz için sizlere teşekkür ederiz. Uygulama hakkında ki tüm soru ve önerilerinizi bizlere Facebook sayfamız üzerinden veya Web Sitemizdeki e-posta adresinden iletebilirsiniz. Bir sonraki güncellemelerde görüşmek dileği ile. "/>
+
+
+
+                 </LinearLayout>
+                <!--Teşekkürler Bitiş-->
+
+            </LinearLayout>
+            <!--Dış Çerçeve Bitiş-->
+
+
+        </ScrollView>
+    </LinearLayout>
+    <!--Content Kısmı Bitiş-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.7">
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook_icon"
+            android:background="#4A62AD"
+            android:onClick="alt_butonlar"
+            android:layout_weight="0.2"/>
+        <ImageButton
+            android:id="@+id/twitter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/twitter"
+            android:background="#1da1f2"
+            android:onClick="alt_butonlar"
+            android:layout_weight="0.2"/>
+        <ImageButton
+            android:id="@+id/instagram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/instagram"
+            android:background="#305C85"
+            android:onClick="alt_butonlar"
+            android:layout_weight="0.2"/>
+        <ImageButton
+            android:id="@+id/limon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/limon_32x32"
+            android:background="#072571"
+            android:onClick="alt_butonlar"
+            android:layout_weight="0.2"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

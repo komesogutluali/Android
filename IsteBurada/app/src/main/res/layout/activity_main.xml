@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/home_background"
+    tools:context=".MainActivity"
+    >
+<!--Uygulama Logosunu ve Okul Armasını En Üst Kısımı Yerleştirdik -->
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="menu_butonlar"
+            android:id="@+id/iste_arma"
+            android:src="@drawable/iste_mini_arma" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/iste_burada_logo"/>
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="10dp"
+        android:rowCount="3"
+        android:columnCount="3"
+        >
+
+        <!--Satır 1 -->
+        <!-- Sütün 1 / OBS -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/obs_cardview"
+            android:onClick="menu_butonlar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/obs_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="OBS"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Sütün 2 / Yemek Listesi -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/yemekhane_cardview"
+            android:onClick="menu_butonlar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/yemekhane_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Yemek Listesi"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Sütün 3 / Duyuru Merkezi -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="menu_butonlar"
+            android:id="@+id/duyurucardview"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/duyurular_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Duyuru Merkezi"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!--Satır 2 -->
+        <!-- Sütün 1 / Etkinlikler -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="menu_butonlar"
+            android:id="@+id/etkinlikcardview"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/etkinlikler_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Etkinlikler"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Sütün 2 / Ne Nerede -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/habercardview"
+            android:onClick="menu_butonlar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/haberler"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Haber Merkezi"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Sütün 2 / Akd. Takvim -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/akademik_cardview"
+            android:onClick="menu_butonlar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/akademik_takvim_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Akd. Takvim"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!--Satır 2 -->
+        <!-- Sütün 1 / İste Hakkında -->
+        <android.support.v7.widget.CardView
+            android:onClick="menu_butonlar"
+            android:id="@+id/iste_hakkinda"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/uygulama_hakkinda"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Hakkında"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Sütün 2 / İletisim & Ulasım -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/iletisim_ulasim"
+            android:onClick="menu_butonlar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/iletisim_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="İletisim"
+                    android:textSize="13sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Sütün 3 / Hakkımızda -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/lim_hakkimizda"
+            android:onClick="menu_butonlar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/isterenk"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+           >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/hakkimizda_128x128"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/beyaz"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Limon Creatif"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </GridLayout>
+
+</LinearLayout>

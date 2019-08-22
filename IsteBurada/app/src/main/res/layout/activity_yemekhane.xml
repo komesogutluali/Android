@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yemekhane_background2"
+    tools:context=".Yemekhane"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+<!--Gün ve Tarih Kısımı-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+
+            <TextView
+                android:id="@+id/title_gun"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Pazartesi"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/beyaz"/>
+            <TextView
+                android:id="@+id/title_tarih"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Pazartesi"
+                android:textSize="20sp"
+                android:textColor="@color/beyaz"/>
+
+        </LinearLayout>
+
+        <!--Yemek Listesi Kısmı-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:paddingTop="25dp"
+                android:layout_weight="15">
+
+
+                <!--Yemek Listesi Yükleniyor Yazısı Burada Başladı -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/isterenk"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="25dp"
+                    android:textSize="23sp"
+                    android:id="@+id/txt"
+                    android:layout_weight="15"
+                    />
+                <!--Yemek Listesi Yükleniyor Yazısı Burada Bitti -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.0"
+                    >
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/reklam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="SMART_BANNER"
+                        ads:adUnitId="ca-app-pub-2352686457422315/4220403773">
+                    </com.google.android.gms.ads.AdView>
+                </RelativeLayout>
+
+                <!--Buton Kısmı-->
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1.8">
+
+            <Button
+                android:id="@+id/geri_trh"
+                android:onClick="yemek_tarihleri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Gerİ"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/beyaz"
+                android:background="@color/isterenk"
+                android:layout_weight="0.6"/>
+            <Button
+                android:id="@+id/yemek_tarih_sec"
+                android:onClick="yemek_tarihleri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:background="@color/isterenk"
+                android:textColor="@color/beyaz"
+                android:text="Tarİh seç"/>
+
+            <Button
+                android:id="@+id/ileri_trh"
+                android:onClick="yemek_tarihleri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:textAlignment="center"
+                android:textColor="@color/beyaz"
+                android:textSize="20sp"
+                android:background="@color/isterenk"
+                android:text="İlerİ"/>
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/pbar"
+
+    />
+</RelativeLayout>

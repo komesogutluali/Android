@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:showAsAction="always"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkademikTakvim">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <!-- Final Layout Başlangıç-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:orientation="vertical"
+        android:background="@drawable/sinav_icin_kalan"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="15dp"
+        >
+
+        <!-- Final TextView Başlangıç-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Final İçin Kalan Süre"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/beyaz"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05.01.2019"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/beyaz"
+                />
+
+            <TextView
+                android:id="@+id/final_tarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0  28  0"
+                android:textColor="@color/beyaz"
+                android:textSize="80sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ay       Gün     Saat"
+                android:textColor="@color/beyaz"
+                android:textSize="35sp"
+                android:layout_marginTop="-25sp"/>
+
+        </LinearLayout>
+        <!-- Final TextView Bitiş-->
+    </LinearLayout>
+    <!-- Final Layout Bitiş-->
+
+
+        <!-- Büt Layout Başlangıç-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:orientation="vertical"
+            android:background="@drawable/but_icin_kalan"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+
+            >
+            <!-- Büt TextView Başlangıç-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bütler İçin Kalan Süre"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/isterenk"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21.01.2019"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/beyaz"
+                    />
+
+                <TextView
+                    android:id="@+id/butler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0  28  0"
+                    android:textColor="@color/isterenk"
+                    android:textSize="80sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ay        Gün    Saat"
+                    android:textColor="@color/isterenk"
+                    android:textSize="35sp"
+                    android:layout_marginTop="-25sp"/>
+
+            </LinearLayout>
+            <!-- Büt TextView Bitiş-->
+        </LinearLayout>
+        <!-- Büt Layout Bitiş-->
+
+
+        <!-- Reklam Layout Başlangıç-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:background="@color/beyaz"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            >
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/reklam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="300x250"
+                ads:adUnitId="ca-app-pub-2352686457422315/4220403773">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+        <!-- Reklam Layout Bitiş-->
+
+
+        <!-- Tatil Layout Başlangıç-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:orientation="vertical"
+            android:background="@drawable/tatil_icin_kalan"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            >
+
+            <!-- Tatil TextView Başlangıç-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tatil İçin Kalan Süre"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/acikmavi"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18.01.2019"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/beyaz"
+                    />
+
+                <TextView
+                    android:id="@+id/tatil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0  28  0"
+                    android:textColor="@color/acikmavi"
+                    android:textSize="80sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ay     Gün   Saat"
+                    android:textColor="@color/acikmavi"
+                    android:textSize="35sp"
+                    android:layout_marginTop="-25sp"/>
+
+            </LinearLayout>
+            <!-- Tatil TextView Bitiş-->
+        </LinearLayout>
+        <!-- Tatil Layout Bitiş-->
+        <!-- Tatil Layout Başlangıç-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:orientation="vertical"
+            android:background="@drawable/okul_sonu_icin_kalan"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            >
+
+            <!-- Tatil TextView Başlangıç-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Okul Sonuna Kalan Süre"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/isterenk"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16.06.2019"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/beyaz"
+                    />
+                <TextView
+                    android:id="@+id/okul_sonu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0  28  0"
+                    android:textColor="@color/isterenk"
+                    android:textSize="80sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ay     Gün   Saat"
+                    android:textColor="@color/isterenk"
+                    android:textSize="35sp"
+                    android:layout_marginTop="-25sp"/>
+
+            </LinearLayout>
+            <!-- Tatil TextView Bitiş-->
+        </LinearLayout>
+        <!-- Tatil Layout Bitiş-->
+
+<!--Sayfa Bitişi-->
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

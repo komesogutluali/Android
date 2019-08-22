@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">İSTE Burada</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_akdemik_takvim">AkdemikTakvim</string>
+    <string name="tab_akademi_1">Güz Dönemi</string>
+    <string name="tab_akademi_2">Bahar Dönemi</string>
+    <string name="tab_akademi_3">Ne Kadar Kaldı?</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_hakkimizda_limon">HakkimizdaLimon</string>
+    <string name="title_activity_sayfalar_arasi_reklam">SayfalarArasiReklam</string>
+
+    <!--Reklam İçin Gerekenler -->
+    <string name="admob_interstitial_id">ca-app-pub-2352686457422315/4177735819</string>
+    <string name="title_activity_limon_hakkinda">LimonHakkinda</string>
+    <string name="tab_text_1">Hakkımızda</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <!-- OnBoard Screen-->
+    <string name="automatic_data">Duyurular ve Etkinlikler</string>
+    <string name="permission_title">Yemek Listesi</string>
+    <string name="permission_detail">Yemekhane listesine istediğin tarihi seçerek birkaç dokunuş ile artık kolayca ulaşabilirsin !</string>
+    <string name="choose_the_song">Akdemik Takvim</string>
+    <string name="edit_data">Hepsi Bir Arada </string>
+    <string name="result_awesome">Artık Hazırız !</string>
+    <string name="continue_and_learn">Tüm yenilikler için ileri !</string>
+    <string name="continue_and_update">Artık neredeyse hazırız</string>
+    <string name="continue_and_result">Sona Geldik Sayılır</string>
+    <string name="thank_you">Limon Creatif ailesi olarak teşekkürler :)</string>
+    <string name="gm_finds_photos">Okulumuzun internet sitesinde yayınlanan tüm duyurulara ve etkinliklere İste Burada aracılığı ile kolayca ulaşabilirsin.</string>
+    <string name="swap_to_the_tab">Akademik Takvim artık çok daha modern ve fonksiyonel ! Sınavlara ne kadar kaldı, tatil ne zaman, bütler ne zaman başlayacak hepsini burada bulabilirsin. :)</string>
+    <string name="update_easily">İste Burada biz öğrencilerin okul ile ilgili tüm bilgilere tek bir uygulama üzerinden ulaşabilmesi için geliştirildi. Yeni özellikler ise çok yakında. </string>
+    <string name="after_updating">Artık başlamak için hazırız ! Uygulamayı yüklediğin için teşekkürler, eğer sende uygulamanın gelişimine katkı sağlamak istersen arkadaşların ile paylaşabilir ve fikirlerini bize iletebilirsin.Unutmadan bu uygulama İskenderun Teknik Üniversitesi resmi uygulaması DEĞİLDİR !</string>
+
+
+</resources>
+
+
+

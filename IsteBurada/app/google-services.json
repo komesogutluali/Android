@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "332384978815",
+    "firebase_url": "https://iste-burada.firebaseio.com",
+    "project_id": "iste-burada",
+    "storage_bucket": "iste-burada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332384978815:android:cca8200d5ec9c463",
+        "android_client_info": {
+          "package_name": "com.limoncreatif.isteburada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332384978815-luvgvh9ijp8gc1agvi0cnvh1tedduuga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.limoncreatif.isteburada",
+            "certificate_hash": "7207e6be872dce7afcd8d00214a500054329aac7"
+          }
+        },
+        {
+          "client_id": "332384978815-f2fpmqcrqs7i3gohjfi760me63isb7t7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.limoncreatif.isteburada",
+            "certificate_hash": "57f00b32d6e49e73ec95a56b1cb07f203aae5424"
+          }
+        },
+        {
+          "client_id": "332384978815-op0f6r864pkp8od9b8kihvq29036s3ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA57zmwMF-joS6vO2-ZAONlHhjd2oHvwTQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332384978815-op0f6r864pkp8od9b8kihvq29036s3ek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-2352686457422315~8114173480"
+    }
+  ],
+  "configuration_version": "1"
+}
